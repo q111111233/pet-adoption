@@ -20,12 +20,31 @@
         <button type="button" id="adopt-button" class="btn btn-primary">Adopt a Pet!</button>
         <button type="button" id="list-button" class="btn btn-danger">List a Pet!</button>
       </div>
-    </div>
-    <div id ="pet-entry">
-      <form id="pet-entry-form">
-        <label for=""></label>
-
-      </form>
+      <hr>
+      <div id ="pet-entry">
+        <form id="pet-form">
+          <label for="name">Enter Pet's name.</label>
+          <input type="text" name="name" id="pet-name" >
+          <br>
+          <br>
+          <label for="type">Type of Pet</label>
+          <select id="pet-type" name="type">
+            <option>Dog</option>
+            <option>Cat</option>
+          </select>
+          <br>
+          <br>
+          <label for="age">Age</label>
+          <input type="number" name="age" id="pet-age">
+          <br>
+          <br>
+          <label for="description">Description</label>
+          <input type="text-area" name="description" id="pet-description">
+          <br>
+          <br>
+          <button type="submit" class="btn btn-success" id="adopt-submit">Submit Adoption!</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
