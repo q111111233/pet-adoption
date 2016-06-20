@@ -7,7 +7,7 @@ $(function(){
   })
 
   var cat1 = new Pet("Mittems", "5", "male", "cat");
-  var cat2 = new Pet("snow", "6", "female", "cat");
+  var cat2 = new Pet("snowball", "6", "female", "cat");
   var dog1 = new Pet("brave", "7", "male", "dog");
   var dog2 = new Pet("beauty", "8", "female", "dog");
 })
