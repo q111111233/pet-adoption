@@ -19,11 +19,22 @@ $(document).ready(function(){
 
     var cat1 = new Pet("Mittems", "cat", "5", "cat");
     for(var i=0; i<pets.length; i++){
-      $(".pet-list").append('<li id="defaultpets">' + pets[i].petName + "</li>");
-      $("#defaultpets").last().click(function(){
-          $("#output").text(defaultpets.age + defaultpets.petDescript + defaultpets.petType);
-      });
+      $(".pet-list").append('<li class="defaultpets' + i +'">' + pets[i].petName + "</li>");
+
+
     }
+    $(".defaultpets" + 0).click(function(){
+        $(".output").text(pets[0].age + pets[0].petDescript + pets[0].petType);
+    });
+    $(".defaultpets" + 1).click(function(){
+        $(".output").text(pets[1].age + pets[1].petDescript + pets[1].petType);
+    });
+    $(".defaultpets" + 2).click(function(){
+        $(".output").text(pets[2].age + pets[2].petDescript + pets[2].petType);
+    });
+    $(".defaultpets" + 3).click(function(){
+        $(".output").text(pets[3].age + pets[3].petDescript + pets[3].petType);
+    });
 
 
       })
@@ -44,7 +55,7 @@ $(document).ready(function(){
         var inputAnimal = new Pet(inputName, inputType, inputAge, inputDescrip);
         $(".pet-list").append('<li id="petNames">' + inputAnimal.petName + "</li>");
         $("#petNames").last().click(function(){
-            $("#output").text(inputAnimal.age + inputAnimal.petDescript + inputAnimal.petType);
+            $(".output").text(inputAnimal.age + inputAnimal.petDescript + inputAnimal.petType);
         })
       });
 
